@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" href="images/favicon-32x32.png">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
-
+  <script src="functions.js"></script>
 </head>
 <body>
   <main class="main">
@@ -30,9 +30,21 @@
             <h3 class="author-name">Michelle Appleton</h3>
             <p class="date-publication">28 Jun 2020</p>
           </div>
-          <button class="profile-block__share">
-            <img src="images/icon-share.svg" alt="Share icon.">
+          <button class="profile-block__share" id="share-button">
+            <img class="share-icon" src="images/icon-share.svg" alt="Share icon.">
+            <img class="share-icon share-icon--active" src="images/icon-share-active.svg" alt="Share icon active state.">
           </button>
+          <div class="profile-block__share-active">
+            <div class="share-box">
+              <p>SHARE</p>
+              <a href='#'><img src="images/icon-facebook.svg" alt="Facebook icon."></a>
+              <a href="#"><img src="images/icon-twitter.svg" alt="Twitter icon."></a>
+              <a href="#"><img src="images/icon-pinterest.svg" alt="Pinterest icon."></a>
+            </div>
+            <div class="triangle">
+              <!-- Here the triangle down is. -->
+            </div>
+          </div>
         </div>
       </div>
     </div>
