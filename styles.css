@@ -90,11 +90,11 @@ body {
 
 .profile-block__share {
   margin: 0 0 0 auto;
-  width: 2.5rem;
-  height: 2.5rem;
-  padding: 0.6rem;
-  border-radius: 50%;
-  background-color: hsl(210, 46%, 95%);
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.6rem;
+    border-radius: 50%;
+    background-color: hsl(210, 46%, 95%);
 }
 
 .profile-block__share:hover {
@@ -105,49 +105,52 @@ body {
   background-color: hsl(214, 17%, 51%);
 }
 
-.share-icon {
+.share-icon-mobile {
+  display: none;
+  width: 100%;
+}
+
+.share-icon-mobile--active {
   display: block;
   width: 100%;
 }
 
-.share-icon--active {
-  display: none;
-}
-
 .profile-block__share-active {
-  position: absolute;
-  right: -4rem;
-  top: 11rem;
   display: none;
 }
 
-.share-box {
+.triangle {
+  display: none;
+}
+
+.share-active-mobile {
+  display: none;
+}
+
+.share-box-mobile {
   display: flex;
   flex-direction: row;
   align-items: center;
   column-gap: 1rem;
   padding: 1rem 2rem;
-  border-radius: 1rem;
+  border-radius: 0 0 1rem 1rem;
   background-color: hsl(217, 19%, 35%);
 }
 
-.triangle {
-  position: relative;
-  top: -0.3rem;
-  margin: 0 auto;
-  width: 0;
-  height: 0;
-  border-left: 1rem solid transparent;
-  border-right: 1rem solid transparent;
-  border-top: 1.2rem solid hsl(217, 19%, 35%);
-  /* background-color: red; */
-}
-
-.profile-block__share-active p {
+.share-active-mobile p {
   display: inline-block;
   letter-spacing: 0.3rem;
   font-weight: 700;
   color:hsl(212, 23%, 69%);
+}
+
+.mobile-button-share {
+  margin: 0 0 0 auto;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.6rem;
+  border-radius: 50%;
+  background-color: hsl(214, 17%, 51%);
 }
 
 
@@ -195,4 +198,74 @@ body {
     font-size: 1rem;
   }
 
+  .profile-block {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+  }
+
+  .profile-block__share {
+    margin: 0 0 0 auto;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.6rem;
+    border-radius: 50%;
+    background-color: hsl(210, 46%, 95%);
+  }
+
+  .profile-block__share:focus {
+    background-color: hsl(214, 17%, 51%);
+  }
+
+  .share-icon {
+    display: block;
+    width: 100%;
+  }
+
+  .share-icon--active {
+    display: none;
+  }
+
+  .profile-block__share-active {
+    position: absolute;
+    right: -4rem;
+    top: 11rem;
+    display: none;
+  }
+  
+  .share-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: hsl(217, 19%, 35%);
+  }
+  
+  
+  .triangle {
+    position: relative;
+    top: -0.3rem;
+    display: block;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+    border-top: 1.2rem solid hsl(217, 19%, 35%);
+    /* background-color: red; */
+  }
+
+  .profile-block__share-active p {
+    display: inline-block;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
+    color:hsl(212, 23%, 69%);
+  }
+
+  .share-active-mobile {
+    display: none;
+  }
 }
